@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="whole">
+        <!-- Left Section: Descriptive Text -->
+        <div class="text">
+            <h1>facebook</h1>
+            <p class="ftext">Facebook helps you connect and share with the people in your life.</p>
+        </div>
+
+        <!-- Right Section: Login Form -->
+        <div class="section">
+            <div class="section2" role="form" aria-labelledby="login-form">
+                <!-- Input for email or phone -->
+                <label for="email" class="visually-hidden">Email address or phone number</label>
+                <input id="email" type="text" placeholder="Email address or phone number" required aria-required="true" />
+
+                <!-- Input for password -->
+                <label for="password" class="visually-hidden">Password</label>
+                <input id="password" type="password" placeholder="Password" required aria-required="true" />
+
+                <!-- Login Button -->
+                <input id="LogIn" type="submit" value="Log in">
+
+                <!-- Link to recover forgotten passwords -->
+                <h6><a href="#" class="forgot-password">Forgotten password?</a></h6>
+
+                <!-- Divider Line -->
+                <div class="line"></div>
+
+                <!-- Create Account Button -->
+                <input type="submit" id="newacc" value="Create new account">    
+            </div> 
+
+            <!-- Link to create a page -->
+            <p class="word"><b><a href="#" class="create-page">Create a Page</a></b> for a celebrity, brand, or business.</p>
+        </div>
+    </div>
+</body>
+</html>

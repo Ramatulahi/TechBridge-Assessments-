@@ -1,0 +1,155 @@
+/* General Reset to Normalize Styles */
+body, h1, p, input, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Clean and modern sans-serif font */
+    background-color: aliceblue; /* Light blue background for a soft feel */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Full screen height */
+}
+
+/* Main Container Styling */
+.whole {
+    display: flex;
+    justify-content: space-between; /* Space between text and form */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: 90%; /* Relative width for responsiveness */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Left Section Styling */
+.text {
+    margin-right: 20px;
+    max-width: 45%; /* Prevent text from stretching too wide */
+}
+
+.text h1 {
+    color: #1877f2; /* Facebook's brand color */
+    font-size: 2.5em; /* Large heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.text .ftext {
+    font-weight: lighter; /* Softer font weight */
+    color: #4b4f56; /* Neutral text color */
+    font-size: 1.1em; /* Slightly larger than normal text */
+}
+
+/* Form Card Styling */
+.section2 {
+    background-color: white; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width for smaller screens */
+    max-width: 400px; /* Limit width on larger screens */
+    margin: 0 auto;
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    display: block;
+    width: 90%; /* Full-width with some padding */
+    margin: 10px auto; /* Centering and spacing */
+    padding: 10px; /* Comfortable padding */
+    border: 1px solid #ccd0d5; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded edges */
+    font-size: 1em; /* Standard input font size */
+    color: #1c1e21; /* Dark gray text */
+}
+
+/* Button Styling */
+#LogIn, #newacc {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; /* Indicates clickability */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Login Button */
+#LogIn {
+    background-color: #1877f2; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#LogIn:hover {
+    background-color: #165ec9; /* Darker blue on hover */
+}
+
+/* Create Account Button */
+#newacc {
+    background-color: #42b72a; /* Green background */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#newacc:hover {
+    background-color: #36a420; /* Darker green on hover */
+}
+
+/* Forgot Password Link */
+h6 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+.forgot-password {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Divider Line */
+.line {
+    border: 1px solid rgba(128, 128, 128, 0.25); /* Light gray line */
+    margin: 10px 0;
+}
+
+/* Create Page Link */
+.word {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.create-page {
+    color: #1877f2; /* Blue text for emphasis */
+    text-decoration: none;
+}
+
+.create-page:hover {
+    text-decoration: underline; /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .whole {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    .text, .section {
+        max-width: 90%; /* Expand to fit smaller screens */
+    }
+}

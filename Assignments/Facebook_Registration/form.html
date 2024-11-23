@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the main CSS file -->
+    <link rel="stylesheet" href="signup.css"> <!-- Linking the Sign-Up specific CSS -->
+</head>
+<body>
+    <!-- Main Title of the page -->
+    <h1 id="text1">Sign Up</h1>
+
+    <!-- Main Form Container -->
+    <form action="submit_form.php" method="post">
+        
+        <!-- Header Section with title and line separator -->
+        <div class="header">
+            <h1>Create Account</h1>
+            <p>Fill in the details to get started</p>
+            <div class="line"></div> <!-- Line separator -->
+        </div>
+
+        <!-- Name Section: First Name and Last Name -->
+        <div id="name-section">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="surname" placeholder="Last Name" required>
+        </div>
+
+        <!-- Date of Birth Section -->
+        <div id="DOB">
+            <select name="day" required>
+                <option value="" disabled selected>Day</option>
+                <!-- Options for Day -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <!-- More day options here -->
+            </select>
+
+            <select name="month" required>
+                <option value="" disabled selected>Month</option>
+                <!-- Options for Month -->
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <!-- More month options here -->
+            </select>
+
+            <select name="year" required>
+                <option value="" disabled selected>Year</option>
+                <!-- Options for Year -->
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <!-- More year options here -->
+            </select>
+        </div>
+
+        <!-- Gender Section: Male, Female, Other -->
+        <div id="Genderdiv">
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            </div>
+            <div class="gender">
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            <div class="gender">
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <!-- User Details Section: Email and Password -->
+        <div class="details">
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit">
+            <input type="submit" value="Sign Up">
+        </div>
+
+        <!-- Additional Link for users who already have an account -->
+        <h3>Already have an account? <a href="#">Log in</a></h3>
+    </form>
+</body>
+</html>

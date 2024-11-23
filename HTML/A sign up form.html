@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+ <html lang="en">
+<head>
+    <meta charset UTF-8/>
+    <meta name="viewport" content="width = device-width, initiial-scale = 1.0"/">
+    <title>Create New Account</title>
+
+    <!-- Link tot the external CSS file-->
+     <link rel="stylesheet" href="../CSS/Pratice.css">
+</head>
+ <body>
+    <h2>Create a new account</h2>
+    <p>It's quick and easy.</p>
+
+    <form action="#"method="post">
+        <!--First Name and Surname-->
+        <input type="text" id="first-name"name="first-name"placeholder="First name"required>
+        <input type="text" id="surname"name="surname"placeholder="Surname"required><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label><br>
+        <select name="dob-day" id="dob-day" required>
+            <option value="17">17</option>
+            <!-- Add more days here if needed -->
+        </select>
+
+        <select name="dob-month" id="dob-month" required>
+            <option value="Oct">Oct</option>
+            <!-- Add more months here if needed -->
+        </select>
+
+        <select name="dob-year" id="dob-year" required>
+            <option value="2024">2024</option>
+            <!-- Add more years here if needed  -->
+             </select><br><br>
+
+        <!-- Gender -->
+         <label>Gender</label><br><input type="radio" id="female" name="gender" value="female" required>
+         <label for="female">Female</label>
+
+         <input type="radio" id="male" name="gender" value="male" required>
+         <label for="male">Male</label>
+
+         <input type="radio" id="custom" name="gender" value="custom" required>
+         <label for="custom">custom</label><br><br>
+
+         <!-- Mobile number or Email and Password -->
+          <input type="text" id="contact" name="contact" placeholder="Mobile number or email" required><br><br>
+          
+          <input type="password" id="password" name="password" placeholder="New password" required><br><br>
+
+         <!-- Information Text -->
+          <p>People who use our service may have uploaded your contact information to facebook.</p>
+          <p>By clicking Sign Up, you agree to our Terms, Data Policy, and Cookies Policy.You may receive SMS notificaations from us and can opt out at any time.</p>
+
+          <!-- Sign Up button -->
+           <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href ="#">Log in</a></p>
+ </body>
+ </html>

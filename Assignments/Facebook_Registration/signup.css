@@ -1,0 +1,119 @@
+/* Body styling for the entire page */
+body {
+    background-color: aliceblue;  /* Light blue background */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Title Styling */
+#text1 {
+    text-align: center;          /* Centers the title */
+    color: blue;                 /* Blue color */
+    font-size: 60px;             /* Larger font size */
+    margin-top: 30px;            /* Adds space above the title */
+}
+
+/* Form container styling */
+form {
+    max-width: 400px;            /* Sets maximum width */
+    margin: auto;                /* Centers the form */
+    background-color: white;     /* White background for form */
+    padding: 20px;               /* Padding around content */
+    border-radius: 8px;          /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Header section with title and line separator */
+.header > h1, .header > p {
+    margin-top: -5px;            /* Reduces space above the title and description */
+    text-align: center;          /* Centers text */
+}
+
+/* Line separator styling */
+.line {
+    width: 100%;                 /* Full width */
+    border: 1px solid rgba(128, 128, 128, 0.4); /* Light gray line */
+    margin-bottom: 25px;         /* Adds space below line */
+}
+
+/* Name input fields */
+#name-section {
+    display: flex;               /* Flex layout */
+    justify-content: space-between; /* Spread name fields evenly */
+    margin-bottom: 20px;         /* Space below name section */
+}
+
+#first-name, #surname {
+    width: 48%;                  /* Each input field takes 48% width */
+    height: 35px;                /* Same height for all input fields */
+    border-radius: 5px;          /* Rounded corners */
+    border: 1.3px solid gray;    /* Gray border */
+    padding: 10px;               /* Padding inside the fields */
+    box-sizing: border-box;      /* Includes padding in width calculation */
+}
+
+/* Date of Birth select box styling */
+#DOB select {
+    width: 100%;                 /* Full width */
+    height: 35px;                /* Matches height of input fields */
+    border-radius: 5px;          /* Rounded corners */
+    border: 1.3px solid gray;    /* Gray border */
+    padding: 10px;               /* Padding inside select */
+    margin-bottom: 15px;         /* Adds space below the select box */
+}
+
+/* Gender section styling */
+#Genderdiv {
+    display: flex;               /* Flex layout for gender options */
+    justify-content: space-between; /* Spread options evenly */
+    margin-bottom: 20px;         /* Adds space below gender section */
+}
+
+.gender {
+    width: 30%;                  /* Each option takes 30% width */
+    height: 35px;                /* Matches height */
+    padding: 5px 0;              /* Padding inside the gender options */
+    text-align: center;          /* Centers the labels */
+    border-radius: 5px;          /* Rounded corners */
+    border: 1px solid gray;      /* Gray border around options */
+    display: flex;               /* Flex display for inputs and labels */
+    justify-content: center;     /* Centers the content */
+    align-items: center;         /* Vertically centers items */
+}
+
+/* Details section input fields */
+.details {
+    width: 100%;                 /* Full width */
+    height: 40px;                /* Matches height of other fields */
+    border-radius: 5px;          /* Rounded corners */
+    border: 1.3px solid gray;    /* Gray border */
+    padding: 10px;               /* Padding inside fields */
+    margin-bottom: 15px;         /* Adds space below details section */
+}
+
+/* Submit button styling */
+.submit {
+    display: flex;
+    justify-content: center;      /* Centers the button */
+}
+
+.submit input {
+    background-color: #4CAF50;    /* Green background */
+    color: white;                 /* White text */
+    border: none;                 /* No border */
+    padding: 15px 20px;           /* Padding inside button */
+    font-size: 16px;              /* Larger font */
+    border-radius: 5px;           /* Rounded corners */
+    cursor: pointer;              /* Pointer cursor on hover */
+}
+
+.submit input:hover {
+    background-color: #45a049;    /* Darker green on hover */
+}
+
+/* Additional link for users who have an account */
+h3 {
+    text-align: center;           /* Centers text */
+    color: gray;                  /* Gray color */
+    margin-top: 20px;             /* Adds space above the text */
+    font-size: 14px;              /* Smaller font */
+}
