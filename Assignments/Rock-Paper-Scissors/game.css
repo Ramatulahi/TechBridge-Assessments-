@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    text-align: center; /* Centers inline elements like text */
+    background-color: #1c1c1c; /* Darker, engaging background color */
+    font-family: 'Arial', sans-serif; /* Applies a clean and modern font */
+    color: white; /* Sets default text color to white for readability */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Main Container */
+main {
+    margin: 20px auto; /* Centers the container horizontally */
+    background: linear-gradient(45deg, #3a3a3a, #9e5baf); /* Gradient with angled effect for vibrancy */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners for a soft look */
+    max-width: 900px; /* Maximum width to keep it from stretching too much */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* Adds a dark shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+main:hover {
+    transform: scale(1.03); /* Slightly enlarges the container on hover */
+}
+
+/* Header Box */
+.h5 {
+    background: linear-gradient(45deg, #dca8fc, #ecf0f1); /* A softer gradient */
+    padding: 15px;
+    width: 20vw;
+    border-radius: 25px;
+    border: 4px solid #9e5baf;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 28px; /* Larger text size for better emphasis */
+    font-weight: bold;
+    text-align: center;
+    margin: 15px auto;
+    animation: bounce 1s ease infinite; /* Bounce effect on header */
+}
+
+/* Bouncing Animation for the Header */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Section Container */
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05); /* Slightly enlarges the section on hover */
+}
+
+/* Button Styling */
+button {
+    background-color: #d93cd7; /* Vibrant purple for buttons */
+    padding: 25px;
+    width: 25vw;
+    border-radius: 20px;
+    border: 5px solid #9e5baf;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #f4f4f4; /* Lightens button background on hover */
+    transform: scale(1.1); /* Enlarges the button */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adds a larger shadow */
+}
+
+/* Score and Fun Display Containers */
+.score, .fun {
+    color: white;
+    background: linear-gradient(45deg, black, #9e5baf); /* Adding some dynamic gradient */
+    margin: auto;
+    max-width: 35vw;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    animation: pulse 2s ease infinite; /* Pulsing effect for score */
+}
+
+/* Pulse Animation for Score/Fun */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Input Field Styling */
+input {
+    background: linear-gradient(45deg, #d93cd7, #ecf0f1);
+    padding: 12px;
+    width: 20vw;
+    border-radius: 20px;
+    border: 5px solid #9e5baf;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+input:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design: Ensuring the game looks good on smaller screens */
+@media (max-width: 768px) {
+    .decorative-box, button, input, .score, .fun {
+        width: 75vw; /* Adjusts width on smaller screens */
+    }
+
+    .h5 {
+        font-size: 24px; /* Smaller font size for headers on mobile */
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 15px;
+    }
+}
