@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="game.css"/> <!-- Link to the updated CSS -->
+</head>
+<body>
+    <main>
+        <!-- Game Title and Fun Introduction -->
+        <h1>Automatic Rock, Paper, Scissors game</h1>
+        <p class="fun">Have a fun game with your computer!</p>
+
+        <!-- Instructions -->
+        <h3>Pick One</h3>
+        
+        <!-- Buttons for Rock, Paper, Scissors -->
+        <section>
+            <button id="rock" value="Rock"><b>Rock</b></button>
+            <button id="paper" value="Paper"><b>Paper</b></button>
+            <button id="scissors" value="Scissors"><b>Scissors</b></button>
+        </section>
+
+        <!-- Area to display the player's and computer's picks -->
+        <section>
+            <h5 id="YourPick"></h5>
+            <h5 id="ComputerPick"></h5>
+        </section>
+
+        <!-- Display the result of the game -->
+        <div id="result"></div>
+
+        <!-- Score Display -->
+        <section>
+            <p class="score" id="yourScore">Your Score: 0</p>
+            <p class="score" id="compScore">Computer's Score: 0</p>
+        </section>
+
+        <!-- Restart Button -->
+        <input id="again" type="submit" onclick="window.location.reload();" value="Restart"/>
+    </main>
+
+    <!-- Link to JavaScript for game logic -->
+    <script src="game.js"></script>
+</body>
+</html>
